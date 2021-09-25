@@ -1,4 +1,3 @@
-
 @accounts_activity_navigation
   Feature: Navigating to specific accounts in Accounts Activity
 

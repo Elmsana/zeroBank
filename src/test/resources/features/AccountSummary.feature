@@ -1,4 +1,4 @@
-    @account_summary
+@account_summary
   Feature: Account Summary Display
 
     Background: Logging in to web application

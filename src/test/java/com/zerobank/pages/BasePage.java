@@ -1,7 +1,10 @@
 package com.zerobank.pages;
 
 import com.zerobank.utilities.Driver;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -15,16 +18,13 @@ public class BasePage {
 
     @FindBy(css = "[class='nav nav-tabs']>li")
     public List<WebElement> navigationTabs;
-    /*
-        0. Account Summary
-        1. Account Activity
-        2. Transfer Funds
-        3. Pay Bills
-        4. My Money Map
-        5. Online Statements
-     */
+
+    public static void main(String[] args) {
+        //  WebDriverManager driver = new ChromeDriverManager();
+        WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
 
 
 
-
+    }
 }

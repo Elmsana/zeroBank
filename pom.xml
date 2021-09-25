@@ -16,6 +16,7 @@
             <artifactId>webdrivermanager</artifactId>
             <version>3.7.1</version>
         </dependency>
+
         <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
             <groupId>junit</groupId>

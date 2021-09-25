@@ -30,6 +30,7 @@ public class AccountsActivityStepDefinitions {
 
     @When("verify that page title is {string}")
     public void verify_that_page_title_is(String string) {
+
         Assert.assertEquals(string, Driver.getDriver().getTitle());
     }
 

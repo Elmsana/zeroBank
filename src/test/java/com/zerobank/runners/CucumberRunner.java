@@ -10,9 +10,8 @@ import org.junit.runner.RunWith;
         glue = "com/zerobank/step_definitions",       //to show where step definitions are located
         dryRun = false,
         plugin = {"html:target/default-cucumber-reports", "json:target/cucumber.json"},
-        tags = "@pay_bills")
-
-
+        tags = "@account_summary")
+///Users/AMANUEL/Cyte Documents/Aman/ZeroBankCucumber-master
 class CucumberRunner {
 
     

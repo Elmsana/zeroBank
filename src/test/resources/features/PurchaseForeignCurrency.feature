@@ -30,7 +30,7 @@ Feature: Purchase Foreign Currency
       When user tries to calculate cost without selecting a currency
       Then error message should be displayed
 
-    Scenario: Error message for not entering value
+     Scenario: Error message for not entering value
       When user tries to calculate cost without entering value
       Then error message should be displayed
 

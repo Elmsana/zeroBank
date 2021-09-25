@@ -8,7 +8,6 @@ import org.openqa.selenium.support.ui.Select;
 import java.util.List;
 
 public class AccountsActivityPage extends BasePage{
-
     @FindBy(css = "[id='aa_accountId'] > option")
     public List<WebElement> accountDropDownOptions;
 

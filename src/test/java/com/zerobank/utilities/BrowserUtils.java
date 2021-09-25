@@ -1,5 +1,4 @@
 package com.zerobank.utilities;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.*;
@@ -202,5 +201,18 @@ public class BrowserUtils {
         }
         return listOfStrings;
     }
-}
+    WebElement parent = Driver.getDriver().findElement(By.id("//*[@class=\"breadcrumb__container\"]"));
+    WebElement childMax = Driver.getDriver().findElement(By.id("//li[@class=\"breadcrumb filter\"]/label[contains(text(),'Maximum Price: $50,000')]"));
+    WebElement childHonda = Driver.getDriver().findElement(By.id("//li[@class='breadcrumb facet']/label[contains(text(),'Honda')]"));
+    WebElement childPilot = Driver.getDriver().findElement(By.id("//li[@class='breadcrumb facet']/label[contains(text(),'Pilot')]"));
+    WebElement childUsed = Driver.getDriver().findElement(By.id("//li[@class='breadcrumb facet']/label[contains(text(),'Used')]"));
+    WebElement childNew = Driver.getDriver().findElement(By.id("//li[@class='breadcrumb facet']/label[contains(text(),'New')]"));
 
+    WebElement getChildMax = Driver.getDriver().findElement(By.id("parent")).findElement(By.id("childMax"));
+    WebElement getChildHonda = Driver.getDriver().findElement(By.id("parent")).findElement(By.id("childHonda"));
+    WebElement getChildPilot = Driver.getDriver().findElement(By.id("parent")).findElement(By.id("childPilot"));
+    WebElement getChildUsed = Driver.getDriver().findElement(By.id("parent")).findElement(By.id("childUsed"));
+    WebElement getChildNew = Driver.getDriver().findElement(By.id("parent")).findElement(By.id("childNew"));
+
+
+}

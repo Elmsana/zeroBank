@@ -1,4 +1,4 @@
-    @pay_bills
+@pay_bills
   Feature: Pay Bills
     
     Background: 
