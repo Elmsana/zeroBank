@@ -76,8 +76,10 @@ public class AccountsActivityStepDefinitions {
         for(WebElement each: accountsActivityPage.datesFromTable){
             Assert.assertTrue(each.getText().compareTo(from)>=0);
             Assert.assertTrue(each.getText().compareTo(to)<=0);
+            System.out.println("aman");
         }
     }
+
 
     @Given("the results should be sorted by most recent date")
     public void the_results_should_be_sorted_by_most_recent_date() {
