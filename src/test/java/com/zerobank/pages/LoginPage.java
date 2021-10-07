@@ -13,7 +13,19 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.util.concurrent.TimeUnit;
 
-public class LoginPage {
+public class LoginPage extends BasePage{
+    @FindBy(css = "[id='user_login']")
+    public WebElement userIdInput;
+
+    @FindBy(css = "[id='user_password']")
+    public WebElement userPasswordInput;
+
+    @FindBy(css = "input[value='Sign in']")
+    public WebElement signInButton;
+
+    @FindBy(css = "div[class='alert alert-error']")
+    public WebElement errorMessage;
+
 
     public LoginPage(){
         PageFactory.initElements(Driver.getDriver(),this);
@@ -28,7 +40,9 @@ public class LoginPage {
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.MILLISECONDS);
 
+
         System.out.println("secondpage");
+        //input[@id='user_login']
     }
 
 }

@@ -21,6 +21,7 @@ public class LoginStepDefinitions {
     @And("user logs in with username {string} and password {string}")
     public void user_logs_in_with_username_and_password(String username, String password) {
       //  loginPage.login(username, password);≈vc
+        loginPage.login(username,password);
 
 
     }
